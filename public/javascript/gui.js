@@ -1,17 +1,3 @@
-/*!
- * ilrt-website - gui.js
- * Copyright (c) 2012 Anonymous <ilrt.mx@gmail.com>
- * MIT Licensed
- */
-
-/*
- * Client Side
- */
-
-/*
- * Now preparation.
- */
-
 now.ready(function(){
   menuItemSelect('menu-first');
   fillRandomVideos();
@@ -19,9 +5,9 @@ now.ready(function(){
 });
 
 $(document).ready(function() {
-  //refreshLoop();
+
 /*
- * Menu.
+ * Menu
  */
 
 $('#menu li').click(function () {
@@ -34,7 +20,7 @@ $('#menu-login').click(function () {
 });
 
 /*
- * Video Player.
+ * Video Player
  */
  
 $('#vp-close').click(function () {
@@ -43,7 +29,7 @@ $('#vp-close').click(function () {
 });
 
 /*
- * Login.
+ * Login
  */
  
 $('#auth_button').click(function () {
@@ -64,7 +50,7 @@ $('#auth_inputs input').keypress(function(event) {
 });
 
 /*
- * Util.
+ * Util
  */
  
 function authenticate (email, passw) {
@@ -81,7 +67,7 @@ function authenticate (email, passw) {
 };
 
 /*
- * Animations.
+ * Animations
  */
  
 function menuItemSelect (id) {
@@ -113,7 +99,7 @@ function loginFail () {
 };
 
 /*
- * Videos.
+ * Videos
  */
 
 function setPlayer () {
@@ -144,6 +130,10 @@ function onYouTubePlayerReady (playerId) {
 function playVideo (id) {
   $('#videoplayer-wraper').fadeIn(1000);
   document.videoPlayer.nextLoad = id;
+  
+  if (jQuery.browser.mozilla == true) {
+    onYouTubePlayerReady();
+  }
 }
 
 function fillRandomVideos () {

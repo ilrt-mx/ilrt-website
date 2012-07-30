@@ -1,4 +1,4 @@
-body {margin:0; background:#eee; font-family:arial,sans-serif; color:#1f1f1f;}
+body {margin:0; background:#eee; font-family:arial,sans-serif; color:#1f1f1f; height:100%;}
 
 .unselectable {
    -moz-user-select:none;
