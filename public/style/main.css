@@ -1,0 +1,13 @@
+body {margin:0; background:#eee; font-family:arial,sans-serif; color:#1f1f1f;}
+
+.unselectable {
+   -moz-user-select:none;
+   -khtml-user-select:none;
+   -webkit-user-select:none;
+   -o-user-select:none;
+   user-select:none;
+}
+
+.clear-float {clear:both;}
+
+a {color:#1f1f1f;}

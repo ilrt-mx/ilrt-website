@@ -1,0 +1,65 @@
+/*
+ * GENERAL
+ */
+
+#github {position:absolute; top:0; right:0;}
+
+#wraper {width:970px; min-height:100%; margin:0 auto; position:relative; background:#eee; z-index:97;}
+	#header {width:710px; height:240px; background:url('../images/header-spanish.png') no-repeat;
+		background-position:right; position:relative;}
+		#facebook {display:block; position:absolute; top:63px; left:20px;}
+		#twitter {display:block; position:absolute; top:63px; left:85px;}
+	
+	#sidebarvideos-wraper {width:250px; height:100%; right:0; top:0; position:absolute; z-index:98;}
+		#random-videos-bar {width:250px; height:100%; position:fixed; background:#1f1f1f;}
+	
+	#content {width:710px; margin:5px; margin-top:35px; position:absolute; background:#eee; 
+		z-index:99;}
+		#inner {padding:50px 20px 20px 20px;}
+	
+	#videosbg {top:0; left:975px; width:26px; height:285px; position:absolute;
+		background:url('../images/videosbg-spanish.png') no-repeat;}
+#line-wraper {position:fixed; bottom:0; width:100%;}
+	#fistbg {bottom:185px; left:5%; width:260px; height:291px; position:absolute;
+		background:url('../images/fistbg.png') no-repeat;}
+	#linebg {bottom:50px; height:200px; width:100%; position:absolute;
+		background:url('../images/bottombarbg.png') repeat;}
+		
+/*
+ * CONTENT
+ */
+ 
+#menu {margin:0; padding:0;}
+#menu li {display:block; float:left; padding:10px; font-weight:bold; cursor:pointer; 
+	border-top:5px solid #eee;}
+	#menu-login {margin-left:150px;}
+
+.video {cursor:pointer;}
+	
+/*
+ * VIDEO PLAYER
+ */
+ 
+#videoplayer-wraper {width:100%; height:100%; position:fixed; background:url('../images/vpbg.png');
+	z-index:99; display:none;}
+	#videoplayer-bg {width:805px; height:590px; background:url('../images/frame.png') no-repeat; 
+		margin:0 auto; padding-top:185px; padding-left:163px;}
+		#videoplayer {width:670px; height:400px;}	
+			#vptitle {float:left; width:60px; color:#1f1f1f; display:block;
+				padding:0; font-weight:bold; font-size:25px;}
+			#vp-close {color:#1f1f1f; background:black; padding:5px; border-radius:5px; font-weight:bold; 
+				width:50px; text-align:center; cursor:pointer; float:right;}
+			#vp-close:hover {color:#000; background:#1f1f1f;}
+			#player {margin-top:5px;}
+
+#tags-form {margin-bottom:30px; background:#e1e1e1; padding:20px;}
+.tag {margin:10px; float:left; width:150px;}
+.tag-input {}
+.tag-name {margin-left:5px;}
+
+.video {margin-bottom:20px;}
+.video:hover {background-color:#1f1f1f;}
+.video img {float:left;}
+.video-info {float:left; width:390px; height:121px; padding:10px; background:#eee;}
+	.video h3 {padding:0; margin:0;}
+	.video p {}

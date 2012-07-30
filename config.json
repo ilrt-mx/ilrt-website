@@ -1,0 +1,12 @@
+{
+	"httpServer": {
+		"port": 80
+	},
+	"database": {
+		"host": "host.com",
+		"port": 8999,
+		"user": "root",
+		"pass": "root",
+		"database": "ilrt"
+	}
+}

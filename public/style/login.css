@@ -1,0 +1,14 @@
+#auth_wraper {width:650px; margin:100px auto;}
+
+#auth_inputs {float:left;}
+	#auth_inputs input {border:0; width:190px; height:25px; margin-bottom:10px; 
+		padding:5px; display:block; background-image:url("../images/inputbg.png"); 
+		background-repeat:repeat-x; outline: none; color:#aaa; 
+		-moz-border-radius:5px; border-radius:5px; font-weight:bold;}
+			
+#auth_logindiv {float:left; margin:20px;}
+	#auth_button {background:none; border:0; color:#1f1f1f; font-size:15px;
+		font-weight:bold; cursor:pointer;}
+	#auth_button:hover {text-decoration:underline;}
+		
+#auth_logo {margin-top:5px; color#1f1f1f;}
